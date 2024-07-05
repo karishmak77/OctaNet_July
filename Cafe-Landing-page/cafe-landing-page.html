@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playwrite+US+Trad:wght@100..400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playwrite+NL:wght@100..400&display=swap"
+      rel="stylesheet"
+    />
+
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+    <link rel="stylesheet" href="landing-page.css" />
+    <script src="landing-page.js"></script>
+
+    <title>Cafe landing page</title>
+  </head>
+  <body>
+    <header class="sidebar">
+      <div class="logo-menu">MENU</div>
+      <nav class="nav-bar">
+        <ul>
+          <li>
+            <a href="#" onclick="hidesidebar()"
+              ><ion-icon name="close-outline"></ion-icon
+            ></a>
+          </li>
+          <li><a href="#" class="nav-item">Home</a></li>
+          <li><a href="#" class="nav-item">Project</a></li>
+          <li><a href="#" class="nav-item">Services</a></li>
+          <li><a href="#" class="nav-item">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <header>
+      <div class="logo">Blissful Bites</div>
+      <nav class="menu-bar">
+        <ul>
+          <li class="hideonmoblie nav-item"><a href="">Home</a></li>
+          <li class="hideonmoblie nav-item"><a href="">Project</a></li>
+          <li class="hideonmoblie nav-item"><a href="">Services</a></li>
+          <li class="hideonmoblie nav-item"><a href="">Contact</a></li>
+          <li class="menu-button">
+            <a href="#" onclick="showsidebar()"
+              ><ion-icon name="menu-outline"></ion-icon
+            ></a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <section class="hero-section">
+      <img src="image/Cafe.jpg" alt="" class="cafe" />
+      <div class="welcome">
+        <label class="logo-name">Blissful Bites Cafe</label>
+      </div>
+    </section>
+
+    <section class="about-us">
+      <img src="image/natural-handmade-1.jpg" alt="" class="about" />
+      <div class="about-info">
+        <div class="cirlcle"></div>
+        <div class="cirlcle-1"></div>
+        <h1 class="heading">About us</h1>
+        <p class="info">
+          consectetur adipisicing elit. Repudiandae fugiat tempora fugit
+          voluptas praesentium optio quis minus voluptatem tempore veritatis
+          exercitationem et, quam sequi eligendi consequuntur, saepe ipsam
+          placeat possimus.
+        </p>
+        <p class="info">
+          Lorem ipsum dolor sit amet Debitis architecto nisi illo nesciunt
+          deserunt voluptatum earum et neque impedit sunt facilis praesentium
+          tempore odit, maxime culpa laboriosam maiores ducimus quia.
+        </p>
+        <p class="info">
+          debitis praesentium minus assumenda ducimus quisquam sit tenetur
+          possimus vel quae. Lorem ipsum, dolor sit amet consectetur adipisicing
+          elit.
+        </p>
+      </div>
+    </section>
+
+    <section class="offer">
+      <div class="offer-container">
+        <h1 class="seller">Best seller coffee</h1>
+        <div class="coffe-offer">
+          <div class="coffee-card-1">
+            <img src="image/coffee-2.jpg" alt="" class="card-img" />
+            <div class="price">
+              <h2 class="coffee-name">Cappuccino</h2>
+              <p class="price-tag">$2.38</p>
+            </div>
+            <p class="info-2">
+              Lorem ipsum dolor sit amet consecur adicing elit.
+            </p>
+            <button class="btn">Order</button>
+          </div>
+
+          <div class="coffee-card-1">
+            <img
+              src="image/cappuccino-6996425_640.jpg"
+              alt=""
+              class="card-img"
+            />
+            <div class="price">
+              <h2 class="coffee-name">Iced Coffee</h2>
+              <p class="price-tag">$1.78</p>
+            </div>
+            <p class="info-2">
+              Lorem ipsum dolor sit amet consecur adicing elit.
+            </p>
+            <button class="btn">Order</button>
+          </div>
+
+          <div class="coffee-card-1">
+            <img src="image/coffee-843278_640.jpg" alt="" class="card-img" />
+            <div class="price">
+              <h2 class="coffee-name">Americano</h2>
+              <p class="price-tag">$1.90</p>
+            </div>
+            <p class="info-2">
+              Lorem ipsum dolor sit amet consecur adicing elit.
+            </p>
+            <button class="btn">Order</button>
+          </div>
+
+          <div class="coffee-card-1">
+            <img src="image/coffee-932103_640.jpg" alt="" class="card-img" />
+            <div class="price">
+              <h2 class="coffee-name">Latte</h2>
+              <p class="price-tag">$1.90</p>
+            </div>
+            <p class="info-2">
+              Lorem ipsum dolor sit amet consecur adicing elit.
+            </p>
+            <button class="btn">Order</button>
+          </div>
+        </div>
+
+        <hr />
+        <h1 class="seller">Best Seller Desert</h1>
+
+        <div class="coffe-offer">
+          <div class="coffee-card-1">
+            <img src="image/pastry-1.jpg" alt="" class="card-img" />
+            <div class="price">
+              <h2 class="coffee-name">cinnamon Roll</h2>
+              <p class="price-tag">$2.38</p>
+            </div>
+            <p class="info-2">
+              Lorem ipsum dolor sit amet consecur adicing elit.
+            </p>
+            <button class="btn">Order</button>
+          </div>
+
+          <div class="coffee-card-1">
+            <img src="image/pastry-2.jpg" alt="" class="card-img" />
+            <div class="price">
+              <h2 class="coffee-name">Macarons</h2>
+              <p class="price-tag">$1.78</p>
+            </div>
+            <p class="info-2">
+              Lorem ipsum dolor sit amet consecur adicing elit.
+            </p>
+            <button class="btn">Order</button>
+          </div>
+
+          <div class="coffee-card-1">
+            <img src="image/pastry-3.jpg" alt="" class="card-img" />
+            <div class="price">
+              <h2 class="coffee-name">kuih Bahulu</h2>
+              <p class="price-tag">$1.90</p>
+            </div>
+            <p class="info-2">
+              Lorem ipsum dolor sit amet consecur adicing elit.
+            </p>
+            <button class="btn">Order</button>
+          </div>
+
+          <div class="coffee-card-1">
+            <img src="image/speciality.jpg" alt="" class="card-img" />
+            <div class="price">
+              <h2 class="coffee-name">Classic Cheese cake</h2>
+              <p class="price-tag">$1.90</p>
+            </div>
+            <p class="info-2">
+              Lorem ipsum dolor sit amet consecur adicing elit.
+            </p>
+            <button class="btn">Order</button>
+          </div>
+        </div>
+        <hr />
+      </div>
+    </section>
+
+    <section class="testimonial">
+      <h1 class="teastimonal-heading">Our Happy Customers</h1>
+      <div class="testimonial-box">
+        <div class="testimonals">
+          <img
+            src="image/aiony-haust-3TLl_97HNJo-unsplash.jpg"
+            alt="person"
+            class="person"
+          />
+          <p class="name">Aninoy haust</p>
+          <p class="comments">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Debitis,
+            non ex illum quidem ut temporibus dolorum?
+          </p>
+        </div>
+
+        <div class="testimonals">
+          <img
+            src="image/houcine-ncib-B4TjXnI0Y2c-unsplash.jpg"
+            alt="person"
+            class="person"
+          />
+          <p class="name">Houcine Gomez</p>
+          <p class="comments">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Debitis,
+            non ex illum quidem ut temporibus dolorum?
+          </p>
+        </div>
+
+        <div class="testimonals">
+          <img
+            src="image/joseph-gonzalez-iFgRcqHznqg-unsplash.jpg"
+            alt="person"
+            class="person"
+          />
+          <p class="name">Joseph Swift</p>
+          <p class="comments">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Debitis,
+            non ex illum quidem ut temporibus dolorum?
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="subscribe">
+      <img src="image/Cafe.jpg" alt="" class="subscribe-image" />
+      <div class="subscribe-box">
+        <h4 class="join">Join in and get 10% off!</h4>
+        <div class="email-box">
+          <input type="text" class="email" placeholder="Email Address" />
+          <button class="subscribe-btn">subscribe</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- <section class="subscribe">
+      <img src="image/Cafe.jpg" alt="baking" class="subscribe-image" />
+      <div class="subscribe-box">
+        <h4 class="join">Join in and get 10% off!</h4>
+      </div>
+    </section> -->
+
+    <footer class="footer-box">
+      <div class="logo-box">
+        <p class="logo-name-footer">Blissfull Bites</p>
+      </div>
+      <div class="footer">
+        <div class="privacy-box">
+          <h4 class="sub-heading">Privacy</h4>
+          <ul>
+            <li class="list">Privacy policy</li>
+            <li class="list">terms & conditions</li>
+          </ul>
+        </div>
+        <div class="service-box">
+          <h4 class="sub-heading">Service</h4>
+          <ul>
+            <li class="list">Shops</li>
+            <li class="list">Menu</li>
+          </ul>
+        </div>
+        <div class="About-box">
+          <h4 class="sub-heading">About Us</h4>
+          <ul>
+            <li class="list">Find theh location</li>
+            <li class="list">About us</li>
+            <li class="list">Our story</li>
+          </ul>
+        </div>
+
+        <div class="social-media-box">
+          <h4 class="sub-heading">Social Media</h4>
+          <div class="icon-box">
+            <ion-icon name="logo-facebook" class="icon"></ion-icon>
+            <ion-icon name="logo-instagram" class="icon"></ion-icon>
+            <ion-icon name="logo-twitter" class="icon"></ion-icon>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

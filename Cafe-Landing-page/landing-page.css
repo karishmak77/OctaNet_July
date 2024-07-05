@@ -1,0 +1,471 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "rubik";
+  text-decoration: none;
+  list-style: none;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+header {
+  background-color: #29190e;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem 0;
+}
+
+.logo {
+  font-weight: bold;
+  color: white;
+  font-size: 2.5rem;
+  margin-left: 1rem;
+  font-family: "Playwrite NL";
+  margin-left: 3rem;
+}
+.nav-bar ul {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.nav-bar ul li a {
+  display: block;
+  color: white;
+  font-size: 16px;
+  padding: 10px 25px;
+  border-radius: 50px;
+  margin: 0 5px;
+  transition: 0.15ms;
+}
+.nav-item:hover,
+.nav-item:active {
+  color: antiquewhite;
+}
+.sidebar {
+  top: 0;
+  right: 0;
+  height: 100vh;
+  position: fixed;
+  width: 250px;
+  display: none;
+  z-index: 100;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
+  box-shadow: 0 0px 5px rgba(0, 0, 0, 0.25);
+  padding-top: 35px;
+}
+.logo-menu {
+  color: white;
+  padding-bottom: 20px;
+  font-weight: bold;
+  font-family: "Playwrite NL";
+}
+.menu-bar ul {
+  display: flex;
+  flex-direction: row;
+}
+.menu-bar ul li a {
+  display: block;
+  color: white;
+  font-size: 16px;
+  padding: 10px 25px;
+  border-radius: 50px;
+  margin: 0 5px;
+  transition: 0.15ms;
+}
+.menu-bar ul li a:hover {
+  color: rgb(15, 15, 15);
+  background-color: rgb(169, 167, 167);
+  box-shadow: 0 0px 5px rgba(251, 250, 250, 0.8);
+}
+hr {
+  margin-bottom: 2rem;
+}
+.menu-button {
+  display: none;
+}
+.hero-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  margin-bottom: 4rem;
+}
+.cafe {
+  width: 100%;
+  height: 40rem;
+  filter: opacity(0.8);
+  position: relative;
+  object-fit: cover;
+}
+.welcome {
+  position: absolute;
+}
+.logo-name {
+  font-size: 3rem;
+  font-weight: 500;
+  color: #4f3b33;
+  background-color: rgba(255, 255, 255, 0.7);
+  border-radius: 4rem;
+  padding: 2rem;
+  text-shadow: 0px 2px 1px rgba(79, 59, 51, 0.6);
+}
+.about-us {
+  margin: 0 auto;
+  padding: 0 3.2rem;
+  max-width: 130rem;
+}
+.offer-container {
+  margin: 0 auto;
+  padding: 0 3.2rem;
+  max-width: 140rem;
+}
+.about {
+  width: 100%;
+  height: 25rem;
+  object-fit: cover;
+  margin-bottom: 1rem;
+}
+.heading {
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 1rem;
+  color: #4f3b33;
+  position: relative;
+  z-index: 2;
+}
+.info {
+  color: #29190e;
+  margin-bottom: 1rem;
+  text-align: center;
+  font-size: 1.3rem;
+  line-height: 1.5rem;
+  z-index: 4;
+  position: relative;
+}
+.about-info {
+  position: relative;
+  overflow: hidden;
+}
+.cirlcle {
+  width: 13rem;
+  height: 13rem;
+  background-color: antiquewhite;
+  border-radius: 50%;
+  position: absolute;
+  z-index: 1;
+  opacity: 0.4;
+  right: -20px;
+  top: 140px;
+}
+.cirlcle-1 {
+  width: 13rem;
+  height: 13rem;
+  background-color: antiquewhite;
+  border-radius: 50%;
+  position: absolute;
+  z-index: 1;
+  opacity: 0.4;
+  left: -20px;
+  top: -10px;
+}
+.offer {
+  margin-top: 4rem;
+  width: 100%;
+  background-color: #a17d60;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  margin-bottom: 4rem;
+}
+.coffe-offer {
+  grid-template-columns: 1fr;
+  gap: 4rem;
+  display: grid;
+  width: 100%;
+  margin-bottom: 3rem;
+}
+.seller {
+  display: inline-block;
+  color: antiquewhite;
+  padding-left: 4rem;
+  padding-right: 4rem;
+  font-size: 2rem;
+  margin-bottom: 3rem;
+  text-align: center;
+  text-shadow: 2px 2px 2px rgba(41, 25, 14, 0.7);
+  background-color: rgba(255, 255, 255, 0.3);
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  font-weight: 400;
+  font-family: "Playwrite NL";
+}
+.coffee-card-1 {
+  width: 100%;
+  padding: 1rem;
+  background-color: white;
+  box-shadow: 0 0px 5px rgba(0, 0, 0, 0.25);
+}
+.card-img {
+  width: 100%;
+  height: 18rem;
+  object-fit: cover;
+  border-radius: 1rem;
+}
+.price {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+.coffee-name {
+  color: #4f3b33;
+}
+.price-tag {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+.info-2 {
+  margin-bottom: 1rem;
+}
+.btn {
+  font-size: 1rem;
+  border-radius: 0.8rem;
+  background-color: #29190e;
+  font-weight: bold;
+  border: none;
+  color: white;
+  padding: 1rem;
+  width: 100%;
+  transition: 0.2s;
+  text-transform: uppercase;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+.btn:hover,
+.btn:active {
+  background-color: #422817;
+}
+
+/* testismonial */
+.testimonial {
+  margin: 0 auto;
+  padding: 0 3.2rem;
+  max-width: 90rem;
+  margin-bottom: 4rem;
+}
+.testimonial-box {
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+}
+.testimonals {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+  width: 100%;
+  height: 18rem;
+  background-color: #422817;
+  margin-bottom: 2rem;
+  padding: 2rem;
+}
+.person {
+  width: 7rem;
+  height: 7rem;
+  object-fit: cover;
+  border-radius: 50%;
+  position: absolute;
+  top: -30px;
+  border: white 3px solid;
+}
+.teastimonal-heading {
+  font-size: 3rem;
+  text-align: center;
+  margin-bottom: 4rem;
+  color: #4f3b33;
+  font-family: "Playwrite NL";
+}
+.name {
+  font-size: 1.5rem;
+  margin: 1rem;
+}
+.comments,
+.name {
+  color: white;
+}
+/* subscribe */
+.subscribe {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+.subscribe-image {
+  width: 100%;
+  height: 17rem;
+  object-fit: cover;
+  filter: brightness(80%);
+  opacity: 0.8;
+  position: relative;
+}
+.subscribe-box {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+.join {
+  color: white;
+  font-size: 1.7rem;
+  text-shadow: 2px 2px 2px rgba(41, 25, 14, 0.7);
+  text-align: center;
+}
+.email {
+  padding: 0.7rem;
+  border-radius: 3rem;
+  width: 32rem;
+  border: none;
+}
+.subscribe-btn {
+  width: 10rem;
+  text-transform: uppercase;
+  background-color: #422817;
+  color: white;
+  border: none;
+  padding: 1rem;
+  border-radius: 3rem;
+}
+.email-box {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: center;
+}
+
+/* footer */
+.footer {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  max-width: 90rem;
+  margin: 0 auto;
+  padding-bottom: 2rem;
+}
+.footer-box {
+  padding: 2rem;
+  background-color: hwb(27 38% 37%);
+}
+.logo-name-footer {
+  font-size: 2rem;
+  color: #29190e;
+  font-family: "playwrite NL";
+  text-shadow: 2px 2px 1px rgba(79, 59, 51, 0.4);
+  font-weight: 800;
+  margin-bottom: 3rem;
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.4);
+}
+.sub-heading {
+  font-size: 1.8rem;
+  font-weight: 500;
+  color: white;
+  text-align: center;
+  margin-bottom: 0.6rem;
+}
+.list {
+  font-size: 1.4rem;
+  text-align: center;
+  line-height: 2rem;
+  cursor: pointer;
+  transition: 0.2s;
+}
+.list:hover,
+.list:active {
+  color: white;
+}
+.icon {
+  color: #29190e;
+  width: 2rem;
+  height: 2rem;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+.icon:hover,
+.icon:active {
+  color: #422817;
+}
+.service-box,
+.privacy-box {
+  margin-bottom: 1rem;
+}
+.social-media-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.icon-box {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+@media (max-width: 800px) {
+  .hideonmoblie {
+    display: none;
+  }
+
+  @media (max-width: 400px) {
+    .sidebar {
+      width: 100%;
+    }
+  }
+  .menu-button {
+    display: block;
+  }
+}
+@media (width > 424px) {
+  .coffe-offer,
+  .testimonial-box {
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+    display: grid;
+  }
+  .name {
+    margin-top: 3rem;
+  }
+}
+
+@media (width>767px) {
+  .about-us {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
+  }
+  .about-info {
+    padding: 4rem;
+  }
+  .testimonial-box {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  .coffe-offer {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+  .footer {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+  .email-box {
+    flex-direction: row;
+  }
+}
